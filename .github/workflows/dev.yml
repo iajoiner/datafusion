@@ -27,14 +27,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Check License Header
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: korandoru/hawkeye@v6
 
   prettier:
     name: Use prettier to check formatting of documents
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
